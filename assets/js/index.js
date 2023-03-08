@@ -1,9 +1,4 @@
-// Google Books APIs
-const key = "AIzaSyDxXcSUwSaX5px-SnsmG6K_LuOMtZKdKUA";
-
-
- const model = new Model();
-
+const model = new Model();
 
 //Social Bar Header
 const containerHeader = document.getElementById('container-header');
