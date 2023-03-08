@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Josefin%20Sans%3A400%2C400i%2C600%2C700%7CPermanent%20Marker&amp;display=swap">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin%20Sans%3A400%2C400i%2C600%2C700%7CPermanent%20Marker&amp;display=swap" media="all" onload="this.media='all'">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin%20Sans%3A400%2C400i%2C600%2C700%7CPermanent%20Marker&#038;display=swap">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header-main-menu">
+        <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">My Library</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Magazines</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html"><span class="glyphicon glyphicon-circle-arrow-left"></span> Back</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <header class="header-search">
+      <nav class="navbar navbar-search">
+          <div class="container-search" id="container-header">
+            
+          </div>
+        </nav>
+  </header>
+
+    <section id="main" class="site-main">
+      <section class="banner-wrapper">
+        <div  class="page_banner page-banner columns-12" data-bg="bg-library" >
+            <div class="row row- row-normal" id="Welcome ">
+                <div class="content-container columns-6 content-column">
+                    <div class="banner-content-box" >  
+                        <div class="service-logo-title-container">
+                            <div class="subtitle-title-container">
+                                <!-- subtitle -->
+                                <h6 class="subtitle">Welcome </h6>
+                                
+                                <!-- heading -->
+                                <h1 class="heading">to the My Library in Van!</h1>
+                            </div>
+                        </div>
+                        <div class="paragraph-wrapper">
+                            <!-- text -->
+                            <p>
+                                <p>We acknowledge that My Library in Vancouver is one of our historical place in the city and we keep the same architecture for years. Helps us to preserve it.</strong></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <div id='search'>
+        <h3 class="heading">My Favourites</h1>
+      </div>
+
+      <section class="Books_list" id="Books_list_favourites" >
+
+      </section>
+
+    </section>
+
+    <footer>
+      <div class="row row-center">
+
+          <div class="columns-12 footer-logo-wrapper">
+
+          <div class="columns-12 footer-logo-column">           
+              <div class="columns-4">
+                  <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="#">My Library</a>
+                      </div>
+                  </div>    
+                  <p class="footer-note">We gratefully acknowledge the support of the Province of British Columbia </p>
+              </div>
+          </div>
+
+          <div class="columns-12 footer-menu-wrapper">
+              <div class="columns-3 column-center content-column">
+                  <p>Businesses</p>
+              </div>
+
+              <div class="columns-3 column-center content-column">
+                  <p>Information</p>
+              </div>
+
+              <div class="columns-3 contact-column">
+                  <p> Contact Us </p>
+                  <a class="ftr-ph glyphicon glyphicon-phone" href="#">1 (604) 999-1111</a>
+                  <br><a class="footer-email glyphicon glyphicon-envelope" href="mailto:info@mylibrary.ca">info@mylibrary.ca</a><br>
+              </div>
+
+              <div class="columns-3 social-column right-1">
+                  <div id="container-footer">
+                      <!-- Social media links -->
+                  </div>
+                  <p class="site-copyright">© 2023 My Libray. All rights reserved.</p>
+                  <ul id="menu-privacy-menu" class="nav-menu privacy-menu">
+                      <li id="menu-item-400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-400">
+                          <a href="#conditions">Terms &amp; Conditions</a>
+                      </li>
+                      <li id="menu-item-401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-401">
+                          <a href="#privacy">Privacy Policy</a>
+                      </li>
+                      <li id="menu-item-1664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1664">
+                          <a href="#request">Request Data</a>
+                      </li>
+                  </ul>         
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/model.js"></script>
+    <script src="assets/js/favourites.js"></script>
+    
+</body>
+
+<!-- <style>
+    [data-bg="bg-library"] {background-image: url('https://images.unsplash.com/photo-1580537659466-0a9bfa916a54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGlicmFyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');}
+</style> -->
+
+</html>
