@@ -128,23 +128,31 @@ function setFavourite() {
   let favouritesArray = [];
   
   let fetchDataFromLocalStorage = model.getFavourites();
+  console.log(fetchDataFromLocalStorage);
 
-
-  let modifiedData = data.map((items) => {
-    if (items.id === this.id) {
-      items.isFavourite = true;
-      favouritesArray.push(items);
-    }
-    return items;
-  });
-
-  if (fetchDataFromLocalStorage) {
-    model.setFavourites([...fetchDataFromLocalStorage, ...favouritesArray]);
+  let favouriteExists = fetchDataFromLocalStorage && fetchDataFromLocalStorage.find((item) => item.id === this.id);
+  if (favouriteExists) {
+    alert("This favourite already exists.");
+    return;
   } else {
-    model.setFavourites(favouritesArray);
-  }
 
-  model.setData(modifiedData);
+    let modifiedData = data.map((items) => {
+      if (items.id === this.id) {
+        items.isFavourite = true;
+        favouritesArray.push(items);
+      }
+      return items;
+    });
+  
+    if (fetchDataFromLocalStorage) {
+      model.setFavourites([...fetchDataFromLocalStorage, ...favouritesArray]);
+    } else {
+      model.setFavourites(favouritesArray);
+    }
+  
+    model.setData(modifiedData);
+    alert('Favourite Added.');
+  }
 
 }
 
